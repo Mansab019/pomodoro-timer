@@ -8,27 +8,29 @@
     <script src = "script.js" defer></script>
 </head>
 <body>
-    <div id = "mode-indicator"> Focus </div>
+    <div id="app">     
+        <div id="mode-indicator"> Focus </div>
 
-    <div id = "timer-display"> 25:00 </div>
+        <div id="timer-display"> 25:00 </div>
 
-    <div id = "control">
-        <button id = "btn-start"> Start </button>
-        <button id = "btn-pause"> Pause </button>
-        <button id = "btn-reset"> Reset </button>
-    </div>
+        <div id="controls">
+            <button id="btn-start"> Start </button>
+            <button id="btn-pause"> Pause </button>
+            <button id="btn-reset"> Reset </button>
+        </div>
 
-    <div id = "settings">
-        <label> Focus (min) : <input type = "number" id = "focus-minutes" value = "25" min = "1" /></label>
-        <label> Focus (sec) : <input type = "number" id = "focus-seconds" value = "0" min = "0" max = "59" /></label>
+        <div id="settings">
+            <label> Focus (min) : <input type="number" id="focus-minutes" value="25" min="1" /></label>
+            <label> Focus (sec) : <input type="number" id="focus-seconds" value="0" min="0" max="59" /></label>
 
-        <label> Break (min) : <input type = "number" id = "break-minutes" value = "5" min = "1" /></label>
-        <label> Break (sec) : <input type = "number" id = "break-seconds" value = "0" min = "0" /></label>
-    </div>
+            <label> Break (min) : <input type="number" id="break-minutes" value="5" min="1" /></label>
+            <label> Break (sec) : <input type="number" id="break-seconds" value="0" min="0" /></label>
+        </div>
 
-    <div id = "history">
-        <h3>Today's Session</h3>
-        <ul id = "history-list"></ul>
+        <div id="history">
+            <h3>Today's Session</h3>
+            <ul id="history-list"></ul>
+        </div>
     </div>
 </body>
 </html>

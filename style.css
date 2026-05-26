@@ -1,0 +1,133 @@
+/* ----Reset & Base--- */
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+/* ---Main App Container--- */
+
+#app {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ---Mode Indicator--- */
+
+#mode-indicator {
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #e94560;
+}
+
+/* ---Timer Display--- */
+
+#timer-display {
+    font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    line-height: 1;
+    color: #ffffff;
+}
+
+/* ---Controls--- */
+
+#controls {
+   
+    display: flex;
+    gap: 15px;
+}
+
+#controls button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #e94560;
+    color: #ffffff;
+    transition: opacity 0.2s;
+}
+
+#controls button:hover {
+    opacity: 0.8;
+}
+
+
+/* --- SETTINGS --- */
+#settings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+#settings label {
+  color: #a0a0b0;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#settings input {
+  width: 60px;
+  padding: 6px 10px;
+  background-color: #16213e;
+  border: 1px solid #e94560;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* --- HISTORY --- */
+#history {
+  width: 100%;
+  background-color: #16213e;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+#history h3 {
+  color: #a0a0b0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+#history-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#history-list li {
+  color: #ffffff;
+  font-size: 0.95rem;
+  padding: 10px 15px;
+  background-color: #1a1a2e;
+  border-radius: 8px;
+  border-left: 3px solid #e94560;
+}
