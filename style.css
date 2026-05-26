@@ -75,11 +75,18 @@ body {
 /* --- SETTINGS --- */
 #settings {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 12px;
   width: 100%;
 }
+
+.settings-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
 
 #settings label {
   color: #a0a0b0;
@@ -130,4 +137,17 @@ body {
   background-color: #1a1a2e;
   border-radius: 8px;
   border-left: 3px solid #e94560;
+}
+
+/* --- BREAK MODE --- */
+body.break-mode #mode-indicator {
+  color: #2ec4b6;
+}
+
+body.break-mode #controls button {
+  background-color: #2ec4b6;
+}
+
+body.break-mode #history-list li {
+  border-left-color: #2ec4b6;
 }

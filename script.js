@@ -33,9 +33,15 @@ function formatTime(seconds) {
 
 // --- UPDATE DISPLAY ---
 
-function updateDisplay(){
-    timerDisplay.textContent = formatTime(secondsLeft)
-    modeIndicator.textContent = isFocusMode ? 'Focus' : 'Break'
+function updateDisplay() {
+  timerDisplay.textContent = formatTime(secondsLeft)
+  modeIndicator.textContent = isFocusMode ? 'Focus' : 'Break'
+  
+  if (isFocusMode) {
+    document.body.classList.remove('break-mode')
+  } else {
+    document.body.classList.add('break-mode')
+  }
 }
 
 // --- TICK ---
